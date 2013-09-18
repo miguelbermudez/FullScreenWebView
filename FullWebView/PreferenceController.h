@@ -10,6 +10,7 @@
 
 extern NSString *const MBWebURLKey;
 extern NSString *const MBWebURL;
+extern NSString *const MBUrlChangedNotification;
 
 @interface PreferenceController : NSWindowController <NSWindowDelegate>
 {

@@ -10,6 +10,7 @@
 
 NSString *const MBWebURLKey = @"URL";
 NSString *const MBWebURL = @"http://www.yahoo.com";
+NSString *const MBUrlChangedNotification = @"MBURLChanged";
 
 @interface PreferenceController ()
 
@@ -63,7 +64,8 @@ NSString *const MBWebURL = @"http://www.yahoo.com";
 - (void)windowWillClose:(NSNotification *)notification
 {
     [self changeURL];
-    [[NSNotificationCenter defaultCenter] postNotification:notification];
+//    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    [[NSNotificationCenter defaultCenter] postNotificationName:MBUrlChangedNotification object:self];
 }
 
 @end

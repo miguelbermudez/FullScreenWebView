@@ -25,7 +25,7 @@
     //Register obbserver
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(preferenceWindowClosing:)
-                                                 name:NSWindowWillCloseNotification
+                                                 name:MBUrlChangedNotification
                                                object:nil];
     
     [self reloadRequest];
@@ -42,6 +42,11 @@
 - (void)preferenceWindowClosing:(NSNotification *)aNotification
 {
     [self reloadRequest];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
