@@ -13,6 +13,7 @@
 
 @property (weak) IBOutlet WebView *theWebView;
 
-- (void)reloadRequest;
+- (void)reloadRequest:(NSNotification *)aNotification;
+- (NSURL *)createURLWithQuery:(NSURL *)aUrl queryParam:(NSString *)strQueryParam;
 
 @end
