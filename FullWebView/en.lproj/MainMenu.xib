@@ -1293,10 +1293,10 @@
 				<string key="NSName">_NSMainMenu</string>
 			</object>
 			<object class="NSWindowTemplate" id="972006081">
-				<int key="NSWindowStyleMask">15</int>
+				<int key="NSWindowStyleMask">1</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{1070, 479}, {1920, 1080}}</string>
-				<int key="NSWTFlags">1954021376</int>
+				<int key="NSWTFlags">1954025472</int>
 				<string key="NSWindowTitle">FullWebView</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
