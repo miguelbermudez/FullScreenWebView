@@ -24,6 +24,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    NSArray *args = [[NSProcessInfo processInfo] arguments];
+    self.screenIndex = [args objectAtIndex:1];
 }
 
 - (IBAction)showPreferencePanel:(id)sender
